@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olivier F. Beaulière- Developpeur WEB</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico.png?v=1" type="image/x-icon">
+  <!--cela sert a l'image en haut en pour un acces rapide presser link et choisissez link favicon et vous remplacerez que le href -->
+  <script src="java.js" defer></script>
+  <!-- le defer sert a faire excutez le code Java script en cas de probleme si dans le head cela a du mal a marcher mettez le a la fin du Body-->
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-header">
+      <div class="logo">
+        Olivier F. Beaulière
+      </div>
+      <nav class="navbar">
+        <ul class="list unstyled">
+          <li class="list-item"><a href="index.html">Accueil</a></li>
+          <li class="list-item"><a href="#about">À propos</a></li>
+          <li class="list-item"><a href="#services">Services</a></li>
+          <li class="list-item"><a href="#skills">Compétences</a></li>
+          <li class="list-item"><a href="#porfolio">Porfolio</a></li>
+          <li class="list-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="rigth">
+        <ul class="socials unstyled">
+          <li><a href="" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+              </svg>
+            </a></li>
+          <li><a href="https://www.linkedin.com/in/olivier-f-beauli%C3%A8re509/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg>
+            </a></li>
+          <li><a href="" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+              </svg>
+            </a></li>
+          <li><a href="" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
+            </a></li>
+        </ul>
+        <button class="burger"><span class="bar"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1>Hello, Je suis <span class="nom">Olivier F. Beaulière</span> Developpeur Web Freelance</h1>
+      <span class="description">Front-End Développeur</span>
+      <p> Plongez dans l'univers magique du développement Front-End avec un passionné de la création web, prêt à donner
+        vie à vos idées
+        les plus audacieuses ! Bienvenue sur mon site, où innovation et élégance se marient pour offrir une expérience
+        utilisateur
+        exceptionnelle.
+      </p>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <div class="grid">
+        <div class="grid-item left">
+          <img src="images/Bobo.JPG" alt="" width="100%" height=" auto">
+        </div>
+        <div class="grid-item rigth">
+          <h2 class="section-title">À propos</h2>
+          <h3>Qui suis-je ?</h3>
+          <p>
+
+            Je m'appelle Olivier F. Beaulière. licensié en informatique ; j'ai étudié a l'école supérieur d'infotronique
+            d'Haïti.
+            Ici, je me lance dans des aventures de codage.
+            Chaque ligne de code que vous verrez ici est le fruit de ma passion pour créer des expériences utilisateur
+            intuitives et engageantes.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="button-48 logo">
+      <a href="pdf/CvOlivierFBEauliere.pdf">Curriculum Vitae</a>
+    </button>
+    
+  </section>
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Mes Services</h2>
+
+      <div class="container-item-services">
+
+        <div class="item-services">
+          <div class="icon-services">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path fill="#958f96"
+                d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm407.4 75.5c5-11.8-7-22.5-19.3-18.7c-39.7 12.2-84.5 19-131.8 19s-92.1-6.8-131.8-19c-12.3-3.8-24.3 6.9-19.3 18.7c25 59.1 83.2 100.5 151.1 100.5s126.2-41.4 151.1-100.5zM160 120c-3.1 0-5.9 1.8-7.2 4.6l-16.6 34.7-38.1 5c-3.1 .4-5.6 2.5-6.6 5.5s-.1 6.2 2.1 8.3l27.9 26.5-7 37.8c-.6 3 .7 6.1 3.2 7.9s5.8 2 8.5 .6L160 232.5l33.8 18.3c2.7 1.5 6 1.3 8.5-.6s3.7-4.9 3.2-7.9l-7-37.8L226.4 178c2.2-2.1 3.1-5.3 2.1-8.3s-3.5-5.1-6.6-5.5l-38.1-5-16.6-34.7c-1.3-2.8-4.1-4.6-7.2-4.6zm192 0c-3.1 0-5.9 1.8-7.2 4.6l-16.6 34.7-38.1 5c-3.1 .4-5.6 2.5-6.6 5.5s-.1 6.2 2.1 8.3l27.9 26.5-7 37.8c-.6 3 .7 6.1 3.2 7.9s5.8 2 8.5 .6L352 232.5l33.8 18.3c2.7 1.5 6 1.3 8.5-.6s3.7-4.9 3.2-7.9l-7-37.8L418.4 178c2.2-2.1 3.1-5.3 2.1-8.3s-3.5-5.1-6.6-5.5l-38.1-5-16.6-34.7c-1.3-2.8-4.1-4.6-7.2-4.6z" />
+            </svg>
+          </div>
+          <div class="content-services">
+            <h3>Animation et Interactivité</h3>
+            <p>
+              Des animations élégantes aux transitions fluides, je maîtrise l'art de rendre votre site web vivant et
+              engageant.
+            </p>
+          </div>
+        </div>
+
+        <div class="item-services">
+          <div class="icon-services">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path fill="#958f96"
+                d="M64 32C46.3 32 32 46.3 32 64s14.3 32 32 32h40v64H32V288c53 0 96 43 96 96v64c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V384c0-53 43-96 96-96c6.3 0 12.4 .6 18.3 1.7C367.1 231.8 426.9 192 496 192c42.5 0 81.6 15.1 112 40.2V160H536V96h40c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM488 96v64H408V96h80zM360 96v64H280V96h80zM232 96v64H152V96h80zM640 368a144 144 0 1 0 -288 0 144 144 0 1 0 288 0zm-76.7-43.3c6.2 6.2 6.2 16.4 0 22.6l-72 72c-6.2 6.2-16.4 6.2-22.6 0l-40-40c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L480 385.4l60.7-60.7c6.2-6.2 16.4-6.2 22.6 0z" />
+            </svg>
+          </div>
+          <div class="content-services">
+            <h3>Conception de sites Web statiques</h3>
+            <p>
+              sites web simples et élégants pour les petites entreprises, les artistes indépendants ou les projets
+              personnels.
+            </p>
+          </div>
+        </div>
+        <div class="item-services">
+          <div class="icon-services">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path fill="#958f96"
+                d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z" />
+            </svg>
+          </div>
+          <div class="content-services">
+            <h3>Sites web responsives</h3>
+            <p>
+              Votre site sera adapté à tous les appareils, assurant une expérience homogène sur ordinateurs de bureau,
+              tablettes et smartphones.
+            </p>
+          </div>
+        </div>
+
+        <div class="item-services">
+          <div class="icon-services">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path fill="#958f96"
+                d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+            </svg>
+          </div>
+          <div class="content-services">
+            <h3>Formation et tutoriels</h3>
+            <p>
+              Formation pour les debutants dans la Conception de site web basique en utilisant le HTML, CSS et
+              JAVASCRIPT
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Mes Compétences</h2>
+      <p class="p-competences">
+        Dans mon parcours de développement web, j'ai acquis des compétences solides en HTML, CSS et JavaScript. Ces
+        langages fondamentaux sont les pierres angulaires
+        de ma capacité à créer des interfaces web attrayantes et interactives.
+      </p>
+      <div class="container-skills">
+        <div class="flex-skills">
+          <div class="progressbar">
+            <div class="bar" style="width: 95%;" data-width="95">HTML</div>
+          </div>
+          <div class="progressbar">
+            <div class="bar" style="width: 90%;" data-width="90">CSS</div>
+          </div>
+          <div class="progressbar">
+            <div class="bar" style="width: 50%;" data-width="50">JAVASCRIPT</div>
+          </div>
+        </div>
+        <div class="skill-images-rigth">
+          <img src="images/skills.jpg" alt="" width="70%" height="auto">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="porfolio" class="porfolio">
+    <div class="container">
+      <h2 class="section-title">Porfolio</h2>
+      <p>
+        Découvrez une sélection de mes projets de développement web où j'ai mis en pratique mes compétences en HTML, CSS
+        et JavaScript. Chaque projet reflète mon engagement à créer des expériences utilisateur exceptionnelles et à
+        traduire des concepts créatifs en réalité numérique.
+        <div class="container-flex">
+          <div class="container card">
+            <img src="images/site1.png" alt="Avatar" class="image">
+            <div class="card-content">
+              <h4>Site de TicketLive </h4>
+              <p>Contenu de la première carte.</p>
+              <div class="overlay">
+                <div class="text">
+                  <a href="#" class="card__link" data-id="modal-1">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="modal-1">
+            <button class="modal__close">&times;</button>
+
+            <div class="modal__content">
+
+              <div class="container-grid">
+                <div class="grids">
+                  <div class="grid__item">
+                    <div class="photo-1">
+                      <img src="images/site1.png" width="90%" class="card__image"
+                        alt="Projet site de la ville de lyon" />
+                    </div>
+                    <div class="photo-2">
+                      <img src="images/sip1p1p1.png" width="90%" class="card__image"
+                        alt="Projet site de la ville de lyon" />
+                    </div>
+                  </div>
+                  <div class="grid__items">
+                    <h4 class="modal__title h2">Groupe & Artiste</h4>
+                    <p>
+                      <svg width="20" height="20" aria-hidden="true" focusable="false" data-prefix="far"
+                        data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                          d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                        </path>
+                      </svg>
+                      <i>Année : 2022</i>
+                    </p>
+
+                    <h3 class="h3">Informations</h3>
+                    <p>
+                      Ce projet est une page web pour un groupe de musique ou un artiste.
+                      Il comporte plusieurs sections, notamment un en-tête avec
+                      une barre de navigation, des informations sur le groupe,
+                      des dates de tournée, des coordonnées de contact et des
+                      liens vers les médias sociaux. Il est conçu pour
+                      promouvoir le groupe de musique ou l'artiste et fournir
+                      des informations aux fans et aux visiteurs. <br>
+                      <p style="font-weight: bold;">Présentation du groupe/Artiste :</p>
+                      L'objectif principal du site est de présenter le groupe ou l'artiste, avec une brève description
+                      et une photo.
+                      <p style="font-weight: bold;">Informations sur la tournée :</p>
+                      Le site fournit des informations sur les dates de la tournée, ce qui permet aux fans de savoir où
+                      et quand le groupe se produira.
+                      <p style="font-weight: bold;">Contacts :</p>
+                      Les coordonnées de contact sont disponibles pour que les visiteurs puissent entrer en
+                      communication avec le groupe ou l'artiste.
+                      Médias sociaux : Le site inclut des liens vers les profils de médias sociaux du groupe, ce qui
+                      permet aux fans de suivre les mises à jour et les actualités sur ces plateformes.
+                    </p>
+
+                    <h3 class="h3">Technologies</h3>
+
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container card">
+            <img src="images/cuisine1.png" alt="Avatar" class="image">
+            <div class="card-content">
+              <h4>Site de Recettes de Cuisine </h4>
+              <p>Contenu de la deuxième carte.</p>
+              <div class="overlay">
+                <div class="text">
+                  <a href="#" class="card__link" data-id="modal-2">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="modal-2">
+            <button class="modal__close">&times;</button>
+
+            <div class="modal__content">
+
+              <div class="container-grid">
+                <div class="grids">
+                  <div class="grid__item">
+                    <div class="photo-1">
+                      <img src="images/cuisine1.png" width="90%" class="card__image"
+                        alt="Projet site de la ville de lyon" />
+                    </div>
+                    <div class="photo-2">
+                      <img src="images/cuisine2.png" width="90%" class="card__image"
+                        alt="Projet site de la ville de lyon" />
+                    </div>
+                  </div>
+                  <div class="grid__items">
+                    <h4 class="modal__title h2">Cuisine</h4>
+                    <p>
+                      <svg width="20" height="20" aria-hidden="true" focusable="false" data-prefix="far"
+                        data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                          d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                        </path>
+                      </svg>
+                      <i>Année : 2022</i>
+                    </p>
+
+                    <h3 class="h3">Informations</h3>
+                    <p>
+                      Ce projet est une page web pour une entreprise de
+                      restauration ou de traiteur appelée "The Caterine".
+                      La page comporte plusieurs sections, notamment un en-tête
+                      avec une barre de navigation, des informations sur
+                      l'entreprise, un menu de restauration, un formulaire de
+                      contact et un pied de page avec des liens vers d'autres
+                      sections de la page et des médias sociaux.
+                    </p> <br>
+                    <p style="font-weight: bold;">Présentation de l'entreprise :</p> L'objectif principal du site est de
+                    présenter l'entreprise "The Caterine", avec des informations sur son histoire, sa tradition depuis
+                    1889 et ses principes de cuisine en utilisant des ingrédients de saison.
+                    <p style="font-weight: bold;">Menu de restauration :</p> Le site présente un menu de restauration
+                    avec différentes options, y compris des descriptions et des prix.
+                    <p style="font-weight: bold;">Coordonnées de contact :</p> Les coordonnées de contact de
+                    l'entreprise sont fournies, y compris une adresse, un numéro de téléphone et une adresse e-mail,
+                    ainsi qu'un formulaire de contact pour les clients intéressés.
+                    <p style="font-weight: bold;">Navigation :</p> Le site comporte une barre de navigation permettant
+                    aux visiteurs de passer facilement d'une section à l'autre.
+
+                    <h3 class="h3">Technologies</h3>
+
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container card">
+            <img src="images/achitec1.png" alt="Avatar" class="image">
+            <div class="card-content">
+              <h4>Site de construction</h4>
+              <p>Contenu de la troisième carte.</p>
+              <div class="overlay">
+                <div class="text">
+                  <a href="#" class="card__link" data-id="modal-3">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="modal-3">
+            <button class="modal__close">&times;</button>
+
+            <div class="modal__content">
+
+              <div class="container-grid">
+                <div class="grids">
+                  <div class="grid__item">
+                    <div class="photo-1">
+                      <img src="images/achitec1.png" width="90%" class="card__image"
+                        alt="Projet site de la ville de lyon" />
+                    </div>
+                    <div class="photo-2">
+                      <img src="images/architec2.png" width="90%" class="card__image"
+                        alt="Projet site de la ville de lyon" />
+                    </div>
+                  </div>
+                  <div class="grid__items">
+                    <h4 class="modal__title h2">Construction</h4>
+                    <p>
+                      <svg width="20" height="20" aria-hidden="true" focusable="false" data-prefix="far"
+                        data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                          d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                        </path>
+                      </svg>
+                      <i>Année : 2022</i>
+                    </p>
+
+
+                    <h3 class="h3">Informations</h3>
+
+                    Ce projet est une page web pour une entreprise d'architecture
+                    qui présente des informations sur l'entreprise, ses
+                    projets, son équipe et comment les contacter. La page
+                    comprend également une barre de navigation, des images de
+                    projets et des descriptions, ainsi que des informations
+                    sur les membres de l'équipe.
+      </p> <br>
+      <p style="font-weight: bold;">Présentation de l'entreprise :</p> La page d'accueil présente l'entreprise "ARCOTEC
+      S.A" avec une image de logo et un titre de bienvenue.
+      <p style="font-weight: bold;">Projets :</p> La section "Projects" affiche des images de différents projets
+      d'architecture avec des titres descriptifs.
+      <p style="font-weight: bold;">À propos de l'entreprise :</p> La section "About" fournit une brève description de
+      l'entreprise.
+      <p style="font-weight: bold;">Équipe :</p> La section "Team" affiche des images et des informations sur les
+      membres de l'équipe.
+      <p style="font-weight: bold;">barre de menu :</p> celle-ci permet aux visiteurs de passer facilement d'une section
+      à l'autre.
+
+
+      <h3 class="h3">Technologies</h3>
+
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+
+      </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="container card">
+      <img src="images/monporfolioimage2.png" alt="Avatar" class="image">
+      <div class="card-content">
+        <h4>Site Web Portfolio </h4>
+        <p>Contenu de la Quatrième carte.</p>
+        <div class="overlay">
+          <div class="text">
+            <a href="#" class="card__link" data-id="modal-4">+</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-4">
+      <button class="modal__close">&times;</button>
+
+      <div class="modal__content">
+
+        <div class="container-grid">
+          <div class="grids">
+            <div class="grid__item">
+              <div class="photo-1">
+                <img src="images/monporfolioimage1.png" width="90%" class="card__image"
+                  alt="Projet site de la ville de lyon" />
+              </div>
+              <div class="photo-2">
+                <img src="images/monporfolioimage2.png" width="90%" class="card__image"
+                  alt="Projet site de la ville de lyon" />
+              </div>
+            </div>
+            <div class="grid__items">
+              <h4 class="modal__title h2">Mon site</h4>
+              <p>
+                <svg width="20" height="20" aria-hidden="true" focusable="false" data-prefix="far" data-icon="calendar"
+                  class="svg-inline--fa fa-calendar fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                  </path>
+                </svg>
+                <i>Année : 2022</i>
+              </p>
+
+              <h3 class="h3">Informations</h3>
+              <p>
+                Ce projet consiste en la création d'un site web
+                personnel pour Olivier F. Beaulière, un développeur web
+                freelance. Le site vise à présenter son profil
+                professionnel, ses compétences en développement web,
+                ainsi que ses services aux visiteurs.
+              </p> <br>
+              <p style="font-weight: bold;">Présentation personnelle :</p> Le site offre une présentation personnelle
+              d'Olivier F. Beaulière, mettant en avant ses antécédents académiques et sa passion pour le développement
+              web.
+              <p style="font-weight: bold;">Navigation :</p> Une barre de navigation est incluse pour permettre aux
+              visiteurs de naviguer facilement vers différentes sections du site, y compris la page d'accueil, la
+              section "À propos", les services, les compétences, le portfolio et les coordonnées.
+              <p style="font-weight: bold;">Services :</p> Une section dédiée aux services est intégrée, décrivant les
+              compétences d'Olivier dans la création de sites web responsives, de sites web statiques, d'animations et
+              d'interactivité, ainsi que dans la formation de débutants en développement web.
+              <p style="font-weight: bold;">Icônes et SVG :</p> Des icônes SVG sont utilisées pour illustrer
+              visuellement les différents services proposés, ajoutant un élément de design au site.
+              <p style="font-weight: bold;">Réseaux sociaux :</p> Des liens vers les profils de médias sociaux d'Olivier
+              sont inclus, permettant aux visiteurs de le suivre sur des plateformes comme LinkedIn.
+              <p style="font-weight: bold;">Design élégant :</p> Le site est conçu de manière à offrir une expérience
+              utilisateur élégante, avec une utilisation de la police de caractères "Poppins" de Google Fonts pour une
+              apparence professionnelle
+
+              <h3 class="h3">Technologies</h3>
+
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contacter-nous</h2>
+      <button onclick="window.location.href = 'contact.html';"  class="button-49" target="_blank" rel="noopener noreferrer" >Cliquez ici</button>
+      
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="logo">
+        Olivier F. Beaulière
+      </div>
+      <div class="socials-footer">
+        <ul class="socials unstyled">
+          <li><a href="" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+              </svg>
+            </a></li>
+          <li><a href="https://www.linkedin.com/in/olivier-f-beauli%C3%A8re509/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg>
+            </a></li>
+          <li><a href="" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+              </svg>
+            </a></li>
+          <li><a href="" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+      <div class="copyrigth">
+        <p>Portfolio © 2023 Olivier F. Beaulière-Develloppeur Front-End.</p>
+      </div>
+      </v>
+  </footer>
+
+</body>

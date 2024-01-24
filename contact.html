@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivier F. Beaulière- Developpeur WEB</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico.png?v=1" type="image/x-icon">
+    <!--cela sert a l'image en haut en pour un acces rapide presser link et choisissez link favicon et vous remplacerez que le href -->
+    <script src="java.js" defer ></script>
+    <!-- le defer sert a faire excutez le code Java script en cas de probleme si dans le head cela a du mal a marcher mettez le a la fin du Body-->
+</head>
+
+<body>
+    <style>
+
+        
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+	--sz: 5px; /*** size ***/
+	--sp: 10s; /*** speed ***/
+	--b1: #3c3532;
+	--b2: #1c1b18;
+	--b3: #0c0b0a;
+	--b4: #0c0b0ae0;
+	--c1: #e399ff;
+	--ts: 50%/calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
+}
+
+div {
+	
+	background:
+		/* black shadows */
+		radial-gradient(circle at 50% 50%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
+		radial-gradient(circle at 0% 0%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
+		radial-gradient(circle at 0% 100%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
+		radial-gradient(circle at 100% 0%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
+		radial-gradient(circle at 100% 100%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
+		/* border bottom */
+		conic-gradient(from 90deg at 97.5% 67%, var(--c1) 0 87.5deg, #fff0 88deg 100%) var(--ts), /*repeated*/
+		conic-gradient(from 90deg at 97.5% 67%, var(--c1) 0 87.5deg, #fff0 88deg 100%) var(--ts),
+		conic-gradient(from 182.5deg at 2.5% 67%, #fff0 0 0deg, var(--c1) 0.5deg 90deg, #fff0 0 100%) var(--ts), /*repeated*/
+		conic-gradient(from 182.5deg at 2.5% 67%, #fff0 0 0deg, var(--c1) 0.5deg 90deg, #fff0 0 100%) var(--ts), 
+		/* border top */
+		conic-gradient(from 270deg at 2.5% 33%, var(--c1) 0 87.5deg, #fff0 88deg 100%) var(--ts), /*repeated*/
+		conic-gradient(from 270deg at 2.5% 33%, var(--c1) 0 87.5deg, #fff0 88deg 100%) var(--ts),
+		conic-gradient(from 2.5deg at 97.5% 33%, #fff0 0 0deg, var(--c1) 0.5deg 90deg, #fff0 0 100%) var(--ts), /*repeated*/
+		conic-gradient(from 2.5deg at 97.5% 33%, #fff0 0 0deg, var(--c1) 0.5deg 90deg, #fff0 0 100%) var(--ts),
+		/* bottom */
+		conic-gradient(from 116.5deg at 50% 85.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts), /*repeated*/
+		conic-gradient(from 116.5deg at 50% 85.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts), /*repeated*/
+		conic-gradient(from 116.5deg at 50% 85.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts),
+		conic-gradient(from 120deg at 50% 83%, var(--c1) 0 120deg, #fff0 0 100%) var(--ts),
+		/* top */
+		conic-gradient(from -63.5deg at 50% 14.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts), /*repeated*/
+		conic-gradient(from -63.5deg at 50% 14.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts), /*repeated*/
+		conic-gradient(from -63.5deg at 50% 14.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts),
+		conic-gradient(from -60deg at 50% 17%, var(--c1) 0 120deg, #fff0 0 100%) var(--ts),
+		/* central gradient */
+		conic-gradient(
+			from 0deg at 50% 50%, #fff0 0 2deg, 
+			var(--b2) 2.5deg 57.5deg, 
+			#fff0 58deg 62.5deg, 
+			var(--b1) 63deg 117.5deg, 
+			#fff0 118deg 122.5deg, 
+			var(--b3) 123deg 177.5deg, 
+			#fff0 178deg 182deg, 
+			var(--b2) 182.5deg 237.5deg, 
+			#fff0 0 242.5deg, 
+			var(--b1) 243deg 297.5deg, 
+			#fff0 298deg 302.5deg, 
+			var(--b3) 303deg 357.5deg,
+			#fff0 358deg 360deg
+		) var(--ts),
+		/* bg */
+		var(--c1);
+	animation: colors var(--sp) linear 0s infinite;
+}
+
+@keyframes colors {
+	100% { filter: hue-rotate(360deg); }
+}
+
+
+
+
+        h4{
+          background-color: black;
+        }
+
+        a  {
+            text-decoration: none;
+            color: rgb(231, 223, 223);
+            padding: 0 10px 0 10px;
+        }
+
+        .mail a{
+            color: brown;
+            font-size: 1.5rem;
+            
+        }
+
+        .mail{
+          transition: transform .4s;
+        }
+
+        .mail:hover{
+          transform: scale(1.2);
+
+
+        }
+
+        button {
+  --c:  #229091; /* the color*/
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+
+button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+button {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: .1em .6em;
+  font-weight: bold;  
+  border: none;
+}
+        
+    </style>
+  
+  <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p>
+        <h4 style="text-align:center">
+        N'hésitez pas à me contacter pour discuter de projets passionnants, de collaborations ou simplement pour
+        échanger des idées. Je suis enthousiaste à l'idée de connecter avec d'autres passionnés du web et de découvrir
+        de nouvelles opportunités. Utilisez le formulaire ci-dessous pour entrer en contact avec moi. J'ai hâte
+        d'entendre parler de vous !
+        </h4>
+      </p>
+    </div>
+
+    
+        <h4 style="text-align:center">
+          <button > <a href  ="tel:50944642035">+50944642035</a>
+           
+        </button>
+           <button> <a href="tel:50941429213">+50941429213</a>
+            
+        </button>
+
+        </h4>
+        <h4 style="text-align:center" class="mail">
+        <a href="mailto:olivierfbeauliere@gmail.com">Envoyez-moi un email !</a>
+        </h4>
+    </div>
+        
+    </div>
+
+    
+
+
+</body>
