@@ -418,55 +418,6 @@ div.icon-services svg {
   padding-top: 10%;
 }
 
-.modal {
-  position: fixed;
-  z-index: 3000;
-  opacity: 0;
-  background-color: white;
-  overflow: auto;
-  visibility: hidden;
-  transform: scale(0);
-  transition: all .4s ease-out;
-}
-
-.modal.show {
-  width: 100%;
-  height: 100%;
-  transform: scale(1);
-  left: 0;
-  top: 0;
-  visibility: visible;
-  opacity: 1;
-  overflow: auto;
-  position: fixed;
-}
-
-.modal__content {
-  background-color: #fefefe;
-  height: 100%;
-  color: black;
-  padding: 5rem 1rem;
-  text-align: left;
-  position: fixed;
-}
-
-.modal__close {
-  position: sticky;
-  right: 1rem;
-  top: 1rem;
-  background: none;
-  border: 1px solid #eee;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 2em;
-  background-color: var(--color-gray);
-  opacity: 0.5;
-  cursor: pointer;
-  z-index: 4000;
-
-}
-
 .grid__item {
   display: flex;
 }
